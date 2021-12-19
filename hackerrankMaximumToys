@@ -20,9 +20,10 @@ The budget is 7 units of currency. He can buy items that cost 1,2,3  for 6, or 3
         Collections.sort(prices);
         int totalP = 0;
         int result = 0;
+        
     for(Integer price : prices){
-        if(k >  totalP + price){
-            totalP = totalP + price;
+    totalP = totalP + price;
+        if(k >  totalP){
             result++;
         }else
         return result;       
